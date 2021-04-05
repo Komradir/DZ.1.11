@@ -14,18 +14,30 @@ public class Main5 {
 
 
         };
+        System.out.println();
+        
+        int [][] mas;
 
         for (int  [] arrayOneD : arrayTwoD) {
 
-            for (int   element : arrayOneD) {
-
-                System.out.print(element + " ");
+            Arrays.sort(arrayOneD);
 
             }
 
+        mas [0][0] = arrayTwoD[0][0];
+        mas [0][1] = arrayTwoD[0][7];
+        mas [1][0] = arrayTwoD[1][0];
+        mas [1][1] = arrayTwoD[1][7];
+        mas [2][0] = arrayTwoD[2][0];
+        mas [2][1] = arrayTwoD[2][7];
+        mas [3][0] = arrayTwoD[3][0];
+        mas [3][1] = arrayTwoD[3][7];
+        mas [4][0] = arrayTwoD[4][0];
+        mas [4][1] = arrayTwoD[4][7];
+        mas [5][0] = arrayTwoD[5][0];
+        mas [5][1] = arrayTwoD[5][7];
 
-            System.out.println(Arrays.toString(arrayTwoD));
+        System.out.println(mas);
         }
     }
 
-}
