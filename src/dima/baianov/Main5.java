@@ -15,24 +15,25 @@ public class Main5 {
         };
         System.out.println(Arrays.deepToString(array).replaceAll("],", "]," + System.getProperty("line.separator"))); // я ваще не понимаю как и что тут происходит, но я только так смог вывести массив
         System.out.println("-----------------------");
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> listmax = new ArrayList<>();
+        ArrayList<Integer> listmix = new ArrayList<>();
         for (int[] arrayOneD : array) {
 
             Arrays.sort(arrayOneD);
 
             int max = getMax(arrayOneD);
             int min = getMin(arrayOneD);
-            list.add(max);
-            list.add(min);
+            listmax.add(max);
+            listmix.add(min);
 
         }
         int mas[][] = {
-                {list.get(0),list.get(1)},
-                {list.get(2),list.get(3)},
-                {list.get(4),list.get(5)},
-                {list.get(6),list.get(7)},
-                {list.get(8),list.get(9)},
-                {list.get(10),list.get(11)},
+                {listmax.get(0),listmix.get(0)},
+                {listmax.get(1),listmix.get(1)},
+                {listmax.get(2),listmix.get(2)},
+                {listmax.get(3),listmix.get(3)},
+                {listmax.get(4),listmix.get(4)},
+                {listmax.get(5),listmix.get(5)},
 
 
         };
